@@ -1,12 +1,11 @@
 apiVersion: apps/v1
-kind: Deployment
+kind: ReplicaSet
 metadata:
-  name: mysql
+  name: mysql-replicaset
   labels:
-    app: mysqlserver
-    name: mysql
+    app: mysql
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: mysql
@@ -22,7 +21,5 @@ spec:
         - name: MYSQL_ROOT_PASSWORD
           value: "pw123"
         ports:
-        - containerPort: 3306
+        - containerPort: 8080
           protocol: TCP
-
-
