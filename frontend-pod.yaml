@@ -13,7 +13,7 @@ spec:
       protocol: TCP
     env:
     - name: DBHOST
-      value: "mysql.ProjectA2.svc.cluster.local"
+      value: "mysql.project-2a.svc.cluster.local"
     - name: DBUSER
       value: "root"
     - name: DBPWD
