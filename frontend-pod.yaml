@@ -17,7 +17,7 @@ spec:
     - name: DBUSER
       value: "root"
     - name: DBPWD
-      value: "app123"
+      value: "pw123"
     - name: DBPORT
       value: "3306"
 
