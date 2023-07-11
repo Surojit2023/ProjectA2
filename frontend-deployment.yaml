@@ -23,6 +23,6 @@ spec:
         - name: DBPWD
           value: "app123"
         - name: DBHOST
-          value: "mysql.ProjectA2.svc.cluster.local"
+          value: "mysql.project-2a.svc.cluster.local"
         - name: DBUSER
           value: "root"
