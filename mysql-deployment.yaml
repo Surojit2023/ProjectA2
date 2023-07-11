@@ -15,12 +15,14 @@ spec:
       labels:
         app: mysql
     spec:
-    containers:
-    - name: mysql
-      image: 540128513460.dkr.ecr.us-east-1.amazonaws.com/mysql_db:v1.0
-      env:
-      - name: MYSQL_ROOT_PASSWORD
-        value: "pw123"
-      ports:
-      - containerPort: 3306
-        protocol: TCP
+      containers:
+      - name: mysql
+        image: 540128513460.dkr.ecr.us-east-1.amazonaws.com/mysql_db:v1.0
+        env:
+        - name: MYSQL_ROOT_PASSWORD
+          value: "pw123"
+        ports:
+        - containerPort: 3306
+          protocol: TCP
+
+

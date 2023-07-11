@@ -1,6 +1,9 @@
-name: app
-labels:
-  app: webserver
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app
+  labels:
+    app: webserver
 spec:
   replicas: 1
   selector:
@@ -13,16 +16,19 @@ spec:
     spec:
       containers:
       - name: app
+        image: 540128513460.dkr.ecr.us-east-1.amazonaws.com/myapp_project2:v1.0
         ports:
         - containerPort: 8080
           protocol: TCP
-        image: 540128513460.dkr.ecr.us-east-1.amazonaws.com/myapp_project2:v1.0
         env:
         - name: DBPORT 
           value: "3306"
         - name: DBPWD
-          value: "app123"
+          value: "pw123
+"
         - name: DBHOST
           value: "mysql.project-2a.svc.cluster.local"
         - name: DBUSER
           value: "root"
+
+
