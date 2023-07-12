@@ -1,4 +1,4 @@
-apiVersion: apps/v1
+apiVersion: apps/v2
 kind: Deployment
 metadata:
   name: app
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: app
-        image: 540128513460.dkr.ecr.us-east-1.amazonaws.com/myapp_project2:v1.0
+        image: 540128513460.dkr.ecr.us-east-1.amazonaws.com/myapp_project2:v2.0
         ports:
         - containerPort: 8080
           protocol: TCP
