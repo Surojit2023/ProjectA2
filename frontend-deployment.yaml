@@ -24,8 +24,7 @@ spec:
         - name: DBPORT 
           value: "3306"
         - name: DBPWD
-          value: "pw123
-"
+          value: "pw123"
         - name: DBHOST
           value: "mysql.project-2a.svc.cluster.local"
         - name: DBUSER
